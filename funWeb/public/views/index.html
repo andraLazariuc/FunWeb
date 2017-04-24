@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="funWebApp">
+	<head>
+	  <title>Fun Web Trivia</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+	  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	  <meta name="keywords" content="web,design,webdesign,trivia,quiz,html,css,angular,javascript,php">
+	  <meta name="description" content="FunWeb- web design trivia">
+
+	  <!--Styles-->
+	  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" /><!-- Boostrap CSS -->
+	  <link rel="stylesheet" href="styles/main.css" /><!-- my CSS -->
+	  <link rel="stylesheet" href="styles/myStyle.css"><!-- my CSS -->
+	 
+	</head>
+	
+	<body >		
+		<section class="content">
+			<section ui-view></section>
+		</section>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<!--AngularJS-->
+	<script type='text/javascript' src='/lib/angular/angular.js'></script>
+	<script type='text/javascript' src='/lib/angular-animate/angular-animate.js'></script>
+	<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js'></script>
+	<script type='text/javascript' src='/lib/angular-ui-router/release/angular-ui-router.min.js'></script>
+	<script type='text/javascript' src="/lib/ui-bootstrap/src/modal/modal.js"></script>
+
+	<!--Socket.IO-->
+	<script type='text/javascript' src='/lib/socket.io-client/dist/socket.io.js'></script>
+
+	<!--Application Init-->
+	<script type='text/javascript' src='/app.js'></script>
+	<script type='text/javascript' src='build/bundle.js'></script>
+	<script type='text/javascript' src='/config.js'></script>
+	<!--<script src="controllers/controllers.js"></script>-->
+
+	
+	</html>

@@ -1,0 +1,22 @@
+<script>
+function scrollBanner() {
+    $(document).scroll(function(){
+        var scrollPos = $(this).scrollTop();
+        var transY = scrollPos / 2;
+       
+        $('.page-title').css({
+        	'transform':'translateY(' + transY + ')',
+        });
+    });
+}
+
+scrollBanner();
+</script>
+<div id="firstPageBody" class="container" >
+	<div id="first_content" class="col-md-offset-2 col-md-8 col-xs-12 ">		
+			<img src="img/background-logo-lightEdit2.png">
+	    	<p id="page-title">Test your <span style="font-weight: bold">Web Design</span> skills with a Quiz. </p>
+	    	<p id = "page-subtitle"><span style="color: rgb(0,162,232)">Learn</span> <span class="glyphicon glyphicon-star" style="font-size:10px; vertical-align: middle; " ></span><span style="color: rgb(255,127,39)"> Practice </span> <span class="glyphicon glyphicon-star" style="font-size:10px; vertical-align: middle;" ></span> <span style="color: rgb(163,73,164)">Have fun</span></p>
+	</div>
+</div>
+

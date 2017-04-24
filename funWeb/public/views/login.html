@@ -1,0 +1,47 @@
+<div  ng-controller="loginCtrl" class="container" id="loginPage">
+	<div class="row">
+		<div class="col-md-offset-4 col-md-6 col-md-offset-4 col-xs-12">
+			<form class="well input-form" name="inputform">
+
+				<div class="form-group has-feedback" >
+				      <label class="control-label" for="email">Email address:</label>
+				      <input type="email" class="form-control" id="email" name="email" ng-model="data.email">
+
+				    </div>
+
+				  <div class="form-group has-feedback" >
+				      <label class="control-label" for="password">Password:</label>
+				      <input type="password" class="form-control" id="password" name="password" ng-model="data.password">
+				    </div>
+
+				  <div class="checkbox">
+				       <label><input type="checkbox"> Remember me</label>
+				     </div>
+
+				  <button type="submit" ng-disabled="inputform.$invalid || inputform.$pristine"  ng-click="save()" class="btn btn-warning">Log in</button>
+				  <div id="facebook_login">
+				  	<p> or </p>
+				  	<h3>Log in with</h3>
+				  	<button type="submit" class="btn btn-primary">Facebook</button>
+				  </div>
+			</form>
+		</div>
+	</div>
+</div>
+		<!--   
+		<p>{{inputform.email}} <br>
+		{{inputform.password}} </p>
+	     -->
+<script>
+var app = angular.module('myApp', []);
+app.controller('loginCtrl', function($scope, $http) {
+    $http.get("http://localhost/travlr/login.php",{
+    params: { email: email , password: password}})
+    //$http.get("http://students.info.uaic.ro/~andra.lazariuc/travlr/conection.php") 
+    .then(function (response) {$scope.names = response.data.records; });
+
+});
+</script>
+
+	
+			
