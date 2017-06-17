@@ -1,0 +1,67 @@
+[
+   {
+      "Text" : "What does HTML stand for?",
+      "Options": ["Home Tool Markup Language","Hyperlinks and Text Markup Language", "Hyper Text Markup Language"],
+      "Answer" : 2
+   },
+	
+  {
+     "Text" : "Choose the correct HTML element for the largest heading:",
+     "Options": ["<h6>","<head>","<h1>","<heading>"],
+     "Answer" : 2
+  },
+  
+  {
+     "Text" : "What is the correct HTML element for inserting a line break?",
+     "Options" : ["<lb>","<br>", "<break>","</n>"],    
+     "Answer" : 1
+  },
+  
+  {
+     "Text" : "What is the correct HTML for adding a background color?",
+     "Options" : ["<background>yellow</background>","<body style=\"background-color:yellow;\">","<body bg=\"yellow\">"],
+     "Answer" : 1
+  },
+
+  {
+     "Text" : "What is the correct HTML for creating a hyperlink?",
+     "Options" : ["<a href=\"http://www.w3schools.com\">W3Schools</a>","<a url=\"http://www.w3schools.com\">W3Schools.com</a>","<a>http://www.w3schools.com</a>","<a name=\"http://www.w3schools.com\">W3Schools.com</a>"],
+     "Answer" : 0
+  },
+
+  {
+     "Text" : "How can you make a numbered list?",
+     "Options" : ["<ul>","<list>","<ol>","<nl>"],
+     "Answer" : 2
+  },
+
+  {
+     "Text" : "What is the correct HTML for making a checkbox?",
+     "Options" : ["<check>","<input type=\"check\">","<input type=\"checkbox\">","<checkbox>"],
+     "Answer" : 2
+  },
+
+  {
+     "Text" : "What is the correct HTML for making a text input field?",
+     "Options" : ["<textinput type=\"text\">","<input type=\"text\">","<textfield>","<input type=\"textfield\">"],
+     "Answer" : 1
+  },
+
+  {
+     "Text" : "What is the correct HTML for making a text area?",
+     "Options" : ["<textarea>","<input type=\"textbox\">","<text>","<input type=\"textarea\">"],
+     "Answer" : 3
+  },
+
+  {
+     "Text" : "What is the correct HTML for inserting an image?",
+     "Options" : ["<img src=\"image.gif\" alt=\"MyImage\">","<img href=\"image.gif\" alt=\"MyImage\">","<image src=\"image.gif\" alt=\"MyImage\">","<img alt=\"MyImage\">image.gif</img>"],
+     "Answer" : 0
+  },
+
+  {
+     "Text" : "What is the correct HTML for inserting a background image?",
+     "Options" : ["<body bg=\"background.gif\">","<background img=\"background.gif\">","<body style=\"background-image:url(background.gif)\">","<body background=\"background.gif\">"],
+     "Answer" : 2
+  }
+]
