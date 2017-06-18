@@ -1,0 +1,91 @@
+[
+   {
+      "Text" : "What does CSS stand for?",
+      "Options": ["Cascading Style Sheets","Computer Style Sheets", "Colorful Style Sheets","Creative Style Sheets"],
+      "Answer" : 1
+   },
+   
+   {
+      "Text" : "Where in an HTML document is the correct place to refer to an external style sheet?",
+      "Options": ["In the <body> section","In the <head> section", "At the end of the document"],
+      "Answer" : 2
+   },
+	
+  {
+     "Text" : "Which HTML tag is used to define an internal style sheet?",
+     "Options": ["<css>","<script>","<style>"],
+     "Answer" : 3
+  },
+  
+  {
+     "Text" : "Which is the correct CSS syntax?",
+     "Options": ["body {color: black;}","{body:color=black;}","body:color=black;","body {color: black;}"],
+     "Answer" : 1
+  },  
+  
+  {
+     "Text" : "How do you insert a comment in a CSS file?",
+     "Options" : ["// this is a comment //","// this is a comment", "/* this is a comment */","' this is a comment"],    
+     "Answer" : 3
+  },
+  
+  {
+     "Text" : "Which CSS property controls the text size?",
+     "Options": ["text-size","font-style","font-size","text-style"],
+     "Answer" : 3
+  },  
+  
+  {
+     "Text" : "How do you add a background color for all <h1> elements",
+     "Options" : ["all.h1 {background-color:#FFFFFF;}","h1 {background-color:#FFFFFF;}","h1.all {background-color:#FFFFFF;}"],
+     "Answer" : 2
+  },
+
+  {
+     "Text" : "How do you display hyperlinks without an underline?",
+     "Options" : ["a {text-decoration:no-underline;}","a {decoration:no-underline;}","a {underline:none;}","a {text-decoration:none;}"],
+     "Answer" : 4
+  },
+
+  {
+     "Text" : "How do you make each word in a text start with a capital letter?",
+     "Options" : ["text-transform:uppercase","text-transform:capitalize","You can't do that with CSS"],
+     "Answer" : 2
+  },
+
+  {
+     "Text" : "How do you make the text bold?",
+     "Options" : ["font:bold","font-weight:bold;","style:bold"],
+     "Answer" : 2
+  },
+
+  {
+     "Text" : "How do you select an element with id "demo"?",
+     "Options" : ["#demo","demo",".demo","*demo"],
+     "Answer" : 1
+  },
+
+  {
+     "Text" : "How do you select elements with class name "test"?",
+     "Options" : ["test","*test",".test","#test"],
+     "Answer" : 3
+  },
+  
+  {
+     "Text" : "How do you make a list that lists its items with squares?",
+     "Options": ["list: square;","list-style-type: square;","list-style-type: square;"],
+     "Answer" : 2
+  },  
+
+  {
+     "Text" : "How do you select all p elements inside a div element?",
+     "Options": ["div p","div.p","div + p"],
+     "Answer" : 1
+  },  
+
+  {
+     "Text" : "How do you group selectors?",
+     "Options": ["Separate each selector with a plus sign","Separate each selector with a space","Separate each selector with a comma"],
+     "Answer" : 3
+  }  
+]
