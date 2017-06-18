@@ -1,0 +1,91 @@
+[
+   {
+      "Text" : "PHP server scripts are surrounded by delimiters, which?",
+      "Options": ["<?php...?>","<script>...</script>", "<&>...</&>","<?php>...</?>"],
+      "Answer" : 1
+   },
+   
+   {
+      "Text" : "How do you write "Hello World" in PHP?",
+      "Options": ["Document.Write("Hello World");",""Hello World";", "echo "Hello World""],
+      "Answer" : 3
+   },
+	
+  {
+     "Text" : "All variables in PHP start with which symbol?",
+     "Options": ["$","&","!"],
+     "Answer" : 1
+  },
+  
+  {
+     "Text" : "What is the correct way to end a PHP statement?",
+     "Options": [".","New line","</php>",";"],
+     "Answer" : 4
+  },  
+  
+  {
+     "Text" : "When using the POST method, variables are displayed in the URL:",
+     "Options" : ["False","True"],    
+     "Answer" : 1
+  },
+  
+  {
+     "Text" : "What is the correct way to include the file "time.inc" ?",
+     "Options": ["<?php include file="time.inc"; ?>","<?php include "time.inc"; ?>","<!-- include file="time.inc" -->","<?php include:"time.inc"; ?>"],
+     "Answer" : 2
+  },  
+  
+  {
+     "Text" : "What is the correct way to open the file "time.txt" as readable?",
+     "Options" : ["fopen("time.txt","r+");","open("time.txt","read");","open("time.txt");","fopen("time.txt","r");"],
+     "Answer" : 4
+  },
+
+  {
+     "Text" : "What is the correct way to create a function in PHP?",
+     "Options" : ["create myFunction()","new_function myFunction()","function myFunction()"],
+     "Answer" : 3
+  },
+
+  {
+     "Text" : "PHP allows you to send emails directly from a script",
+     "Options" : ["True","False"],
+     "Answer" : 1
+  },
+
+  {
+     "Text" : "What is the correct way to add 1 to the $count variable?",
+     "Options" : ["count++;","$count =+1","++count","$count++;"],
+     "Answer" : 4
+  },
+
+  {
+     "Text" : "How do you get information from a form that is submitted using the "get" method?",
+     "Options" : ["$_GET[];","Request.Form;","Request.QueryString;"],
+     "Answer" : 1
+  },
+
+  {
+     "Text" : "Which one of these variables has an illegal name?",
+     "Options" : [" $my_Var","$my-Var","$myVar"],
+     "Answer" : 2
+  },
+  
+  {
+     "Text" : "In PHP, the only way to output text is with echo.",
+     "Options": ["True","False"],
+     "Answer" : 2
+  },  
+
+  {
+     "Text" : "The if statement is used to execute some code only if a specified condition is true",
+     "Options": ["True"," False"],
+     "Answer" : 1
+  },  
+
+  {
+     "Text" : "The setcookie() function must appear BEFORE the <html> tag.",
+     "Options": ["True","False"],
+     "Answer" : 1
+  }  
+]
