@@ -6,8 +6,8 @@
    },
    
    {
-      "Text" : "What is the correct syntax for referring to an external script called "xxx.js"?",
-      "Options": ["<script src="xxx.js">","<script href="xxx.js">", "<script name="xxx.js">"],
+      "Text" : "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+      "Options": ["<script src=\"xxx.js\">","<script href=\"xxx.js\">", "<script name=\"xxx.js\">"],
       "Answer" : 1
    },
 	
@@ -18,7 +18,7 @@
   },
   
   {
-     "Text" : "How do you call a function named "myFunction"?",
+     "Text" : "How do you call a function named \"myFunction\"?",
      "Options": ["call function myFunction()","call myFunction()","myFunction()"],
      "Answer" : 3
   },  
@@ -49,7 +49,7 @@
 
   {
      "Text" : "What is the correct way to write a JavaScript array?",
-     "Options" : ["var colors = (1:"red", 2:"green", 3:"blue")","var colors = "red", "green", "blue"","var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")","var colors = ["red", "green", "blue"]"],
+     "Options" : ["var colors = (1:\"red\", 2:\"green\", 3:\"blue\")","var colors = \"red\", \"green\", \"blue\"","var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")","var colors = [\"red\", \"green\", \"blue\"]"],
      "Answer" : 4
   },
 
