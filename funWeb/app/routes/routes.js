@@ -1,28 +1,15 @@
 const express = require('express');
 const router = express.Router();
-const player = require('./playerRoutes');
-const competition = require('./compRoutes');
-const game = require('./gameRoutes');
-const bet = require('./betRoutes');
-const better = require('./betterRoutes');
+const user = require('./userRoutes');
+
+var User            = require('../models/user');
 
 
 module.exports = (app, passport) => {
 
-    // Handle for the player routes
-    router.use('/', player);
-
-    // Handle for the competition routes
-    router.use('/', competition);
-
-    // Handle for the game routes
-    router.use('/', game);
-
-     // Handle for the bet routes
-    router.use('/', bet);
-
-    // Handle for the better routes
-    router.use('/', better);
+  
+    // Handle for the user routes
+    router.use('/', user);
 
     // Expose them to the rest of the application
     app.use('/', router);
@@ -38,18 +25,23 @@ module.exports = (app, passport) => {
         app.get('/', function(req, res, next) {
             //res.render('index'); // load the index.ejs file
             if (!req.user) res.render('home',{
+                user: JSON.stringify( new User()),
+                userId : '0' ,
                 username : '' ,
+                //userFacebookName : '',
                 userEmail: '',
                 userScore: '0',
                 userLevel: '0'
                 
             }); //
             else res.render('home', {
-                user : req.user, // get the user out of session and pass to template
+                user : JSON.stringify(req.user), // get the user out of session and pass to template
+                userId: req.user._id ,
                 username : req.user.local.username ,
+                //userFacebookName : req.user.facebook.name ? req.user.facebook.name : '',
                 userEmail: req.user.local.email,
-                userScore: req.user.local.score,
-                userLevel: req.user.local.level
+                userScore: req.user.score,
+                userLevel: req.user.level
             });
         });
 
@@ -78,7 +70,18 @@ module.exports = (app, passport) => {
 
         // process the signup form
         // app.post('/signup', do all our passport stuff here);
+        // =====================================
+        // FACEBOOK ROUTES =====================
+        // =====================================
+        // route for facebook authentication and login
+        app.get('/auth/facebook', passport.authenticate('facebook', { scope : 'email' }));
 
+        // handle the callback after facebook has authenticated the user
+        app.get('/auth/facebook/callback',
+            passport.authenticate('facebook', {
+                successRedirect : '/',
+                failureRedirect : '/signup'
+            }));
         // =====================================
         // PROFILE SECTION =====================
         // =====================================
