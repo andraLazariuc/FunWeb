@@ -6,8 +6,8 @@
    },
    
    {
-      "Text" : "How do you write "Hello World" in PHP?",
-      "Options": ["Document.Write("Hello World");",""Hello World";", "echo "Hello World""],
+      "Text" : "How do you write \"Hello World\" in PHP?",
+      "Options": ["Document.Write(\"Hello World\");","\"Hello World\";", "echo \"Hello World\""],
       "Answer" : 3
    },
 	
@@ -30,14 +30,14 @@
   },
   
   {
-     "Text" : "What is the correct way to include the file "time.inc" ?",
-     "Options": ["<?php include file="time.inc"; ?>","<?php include "time.inc"; ?>","<!-- include file="time.inc" -->","<?php include:"time.inc"; ?>"],
+     "Text" : "What is the correct way to include the file \"time.inc\" ?",
+     "Options": ["<?php include file=\"time.inc\"; ?>","<?php include \"time.inc\"; ?>","<!-- include file=\"time.inc\" -->","<?php include:\"time.inc\"; ?>"],
      "Answer" : 2
   },  
   
   {
-     "Text" : "What is the correct way to open the file "time.txt" as readable?",
-     "Options" : ["fopen("time.txt","r+");","open("time.txt","read");","open("time.txt");","fopen("time.txt","r");"],
+     "Text" : "What is the correct way to open the file \"time.txt\" as readable?",
+     "Options" : ["fopen(\"time.txt\",\"r+\");","open(\"time.txt\",\"read\");","open(\"time.txt\");","fopen(\"time.txt\",\"r\");"],
      "Answer" : 4
   },
 
@@ -60,14 +60,14 @@
   },
 
   {
-     "Text" : "How do you get information from a form that is submitted using the "get" method?",
+     "Text" : "How do you get information from a form that is submitted using the \"get\" method?",
      "Options" : ["$_GET[];","Request.Form;","Request.QueryString;"],
      "Answer" : 1
   },
 
   {
      "Text" : "Which one of these variables has an illegal name?",
-     "Options" : [" $my_Var","$my-Var","$myVar"],
+     "Options" : ["$my_Var","$my-Var","$myVar"],
      "Answer" : 2
   },
   
